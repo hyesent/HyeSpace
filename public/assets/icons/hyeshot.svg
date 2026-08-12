@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+  <defs>
+
+    <linearGradient id="editBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+
+    <linearGradient id="editCrystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#DBEAFE"/>
+      <stop offset="60%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="playCore" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+  </defs>
+
+
+  <!-- Background -->
+  <rect
+    width="512"
+    height="512"
+    rx="128"
+    fill="url(#editBg)"
+  />
+
+
+  <!-- Ambient light -->
+  <circle
+    cx="256"
+    cy="256"
+    r="150"
+    fill="#6366F1"
+    opacity=".16"
+    filter="url(#softGlow)"
+  />
+
+
+  <!-- Editing frame -->
+  <path
+    d="
+      M142 142
+      H370
+      V370
+      H142
+      Z"
+    fill="none"
+    stroke="url(#editCrystal)"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+
+
+  <!-- Timeline cuts -->
+  <path
+    d="
+      M118 184
+      H394
+
+      M118 328
+      H394"
+    stroke="url(#editCrystal)"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+
+  <!-- Timeline markers -->
+  <path
+    d="
+      M172 174
+      V194
+
+      M256 174
+      V194
+
+      M340 174
+      V194
+
+      M172 318
+      V338
+
+      M256 318
+      V338
+
+      M340 318
+      V338"
+    stroke="#FFFFFF"
+    stroke-opacity=".55"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+
+  <!-- Central play core -->
+  <path
+    d="
+      M218 210
+      L326 256
+      L218 302
+      Z"
+    fill="none"
+    stroke="url(#playCore)"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+
+
+  <!-- Core point -->
+  <circle
+    cx="256"
+    cy="256"
+    r="13"
+    fill="#FFFFFF"
+  />
+
+
+  <!-- Precision edit marks -->
+  <path
+    d="
+      M126 126
+      H166
+
+      M126 126
+      V166
+
+      M346 126
+      H386
+
+      M386 126
+      V166
+
+      M126 346
+      V386
+
+      M126 386
+      H166
+
+      M386 346
+      V386
+
+      M346 386
+      H386"
+    stroke="#FFFFFF"
+    stroke-opacity=".35"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+
+  <!-- Upper reflection -->
+  <path
+    d="
+      M168 148
+      C214 118 298 118 344 148"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-opacity=".35"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+</svg>
