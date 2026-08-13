@@ -37,7 +37,7 @@ export const apps = [
       {
         id: "hyescriptures-elder",
         name: "Elder",
-        price: 7500,
+        price:  750000,
         currency: "NGN",
         interval: "yearly",
         description:
@@ -127,7 +127,7 @@ export const apps = [
       {
         id: "hyelearner-foundation",
         name: "Foundation",
-        price: 1500,
+        price: 150000,
         currency: "NGN",
         interval: "monthly",
         description:
