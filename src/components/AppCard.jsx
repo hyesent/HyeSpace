@@ -43,7 +43,7 @@ const AppCard = ({ app }) => {
   };
 
   // Handle subscribe
-  const handleSubscribe = async (tier) => {
+  const handleSubscribe = async (tier, billingType = 'one-time') => {
     if (!user) {
       signInWithGoogle();
       return;
@@ -53,12 +53,14 @@ const AppCard = ({ app }) => {
       email: user.email,
       amount: tier.price,
       currency: tier.currency,
+      planCode: billingType === 'recurring' ? tier.paystackPlanCode : null,
       metadata: {
         userId: user.id,
         appId: app.id,
         tierId: tier.id,
         storeId: profile?.store_id,
         interval: tier.interval,
+        billingType,
       },
       onSuccess: async (response) => {
         showToast("Payment successful. Activating subscription...");
@@ -239,12 +241,24 @@ const AppCard = ({ app }) => {
                         ))}
                       </ul>
                     )}
+
+                    {/* One-time button */}
                     <button
-                      className="btn btn-primary tier-subscribe-btn"
-                      onClick={() => handleSubscribe(tier)}
+                      className="btn btn-outline tier-subscribe-btn"
+                      onClick={() => handleSubscribe(tier, 'one-time')}
                     >
-                      Subscribe
+                      Pay Once
                     </button>
+
+                    {/* Recurring button — only if plan code exists */}
+                    {tier.paystackPlanCode && (
+                      <button
+                        className="btn btn-primary tier-subscribe-btn"
+                        onClick={() => handleSubscribe(tier, 'recurring')}
+                      >
+                        Subscribe & Auto-Renew
+                      </button>
+                    )}
                   </div>
                 ))}
               </div>
