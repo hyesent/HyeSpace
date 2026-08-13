@@ -12,7 +12,8 @@ export const initializePayment = ({
   onSuccess, 
   onClose 
 }) => {
-  const handler = window.PaystackPop.setup({
+  
+  const config = {
     key: PAYSTACK_PUBLIC_KEY,
     email,
     currency: currency || "NGN",
@@ -29,16 +30,17 @@ export const initializePayment = ({
     onClose: () => {
       if (onClose) onClose();
     },
-  });
+  };
 
   // If plan code exists, use recurring plan (no amount needed)
   if (planCode) {
-    handler.plan = planCode;
+    config.plan = planCode;
   } else {
-    // One-time payment — use amount
-    handler.amount = amount;
+    // One-time payment — amount in kobo
+    config.amount = paystackAmount;
   }
 
+  const handler = window.PaystackPop.setup(config);
   handler.openIframe();
 };
 
