@@ -108,7 +108,7 @@ export const apps = [
     lastUpdated: "2026-08-03",
     isNew: true,
     isUpdated: false,
-    apkUrl: "https://drive.google.com/file/d/1aw0Zk2Y5RyRwv1YrfHGK5Tll8TGBjPG7/view?usp=drivesdk",
+    apkUrl: "https://drive.google.com/file/d/1oOCa5-iy7TWQXXtso3kOeRePVUSU77h6/view?usp=drivesdk",
     webAppUrl: "https://hyelearner-foundation.vercel.app",
     screenshots: [
       "/assets/screenshots/hyelearner/1.jpg",
