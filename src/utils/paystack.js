@@ -3,16 +3,24 @@
 const PAYSTACK_PUBLIC_KEY = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY;
 
 // Initialize Paystack payment
-export const initializePayment = ({ email, amount, currency, metadata, onSuccess, onClose }) => {
+export const initializePayment = ({ 
+  email, 
+  amount, 
+  currency, 
+  metadata, 
+  planCode = null,
+  onSuccess, 
+  onClose 
+}) => {
   const handler = window.PaystackPop.setup({
     key: PAYSTACK_PUBLIC_KEY,
     email,
-    amount, // In kobo (NGN) or cents (USD)
     currency: currency || "NGN",
     ref: `hye_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
     metadata: {
       ...metadata,
       interval: metadata.interval,
+      billingType: planCode ? "recurring" : "one-time",
       source: "hyespace",
     },
     callback: (response) => {
@@ -22,6 +30,14 @@ export const initializePayment = ({ email, amount, currency, metadata, onSuccess
       if (onClose) onClose();
     },
   });
+
+  // If plan code exists, use recurring plan (no amount needed)
+  if (planCode) {
+    handler.plan = planCode;
+  } else {
+    // One-time payment — use amount
+    handler.amount = amount;
+  }
 
   handler.openIframe();
 };
