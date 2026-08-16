@@ -11,14 +11,14 @@ export const apps = [
       "Hyescriptures is your all-in-one Bible app designed to help you read, study, and grow in God's Word every day.",
     shortDescription:
       "Your daily bread — Bible reading, devotionals, AI study tools & community.",
-    version: "1.0.1",
+    version: "1.0.2",
     size: "120 MB",
     rating: 4.7,
     totalRatings: 3,
     lastUpdated: "2026-08-03",
     isNew: true,
     isUpdated: false,
-    apkUrl: "https://drive.google.com/file/d/1ROqZlEISGquKZ3NXjypCAXbbxRYB2ZbM/view?usp=drivesdk",
+    apkUrl: "https://drive.google.com/file/d/16F_v3Sy2XQc3iUTEFyaY4xlukYtKfuXd/view?usp=drivesdk",
     webAppUrl: "https://hye-scriptures.vercel.app",
     screenshots: [
       "/assets/screenshots/hyescriptures/1.jpg",
@@ -31,6 +31,11 @@ export const apps = [
         version: "v1.0.1",
         date: "2026-08-06",
         notes: "Added more consistent audio bible performance.",
+      },
+       {
+        version: "v1.0.2",
+        date: "2026-08-16",
+        notes: "Improved socials and better image handling",
       },
     ],
     subscriptionTiers: [
