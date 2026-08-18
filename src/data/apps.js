@@ -18,7 +18,7 @@ export const apps = [
     lastUpdated: "2026-08-03",
     isNew: true,
     isUpdated: false,
-    apkUrl: "https://drive.google.com/file/d/1R-xpCe-5ZrKAWheWhUhLxVijx_nddovV/view?usp=drive_link",
+    apkUrl: "https://drive.google.com/file/d/1qrMFy3V_79YXMHOyJCWOw4XdjQRE4C0C/view?usp=drive_link",
     webAppUrl: "https://hye-scriptures.vercel.app",
     screenshots: [
       "/assets/screenshots/hyescriptures/1.jpg",
