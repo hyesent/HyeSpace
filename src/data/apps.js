@@ -16,8 +16,8 @@ export const apps = [
     rating: 4.7,
     totalRatings: 3,
     lastUpdated: "2026-08-03",
-    isNew: true,
-    isUpdated: false,
+    isNew: false,
+    isUpdated: true,
     apkUrl: "https://drive.google.com/file/d/1qrMFy3V_79YXMHOyJCWOw4XdjQRE4C0C/view?usp=drive_link",
     webAppUrl: "https://hye-scriptures.vercel.app",
     screenshots: [
