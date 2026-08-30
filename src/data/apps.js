@@ -235,7 +235,7 @@ export const apps = [
     lastUpdated: "2026-08-03",
     isNew: false,
     isUpdated: true,
-    apkUrl: "https://drive.google.com/file/d/1YHUHqj0PBTBEBoM8_n3j3eYnyWvo7WW_/view?usp=drivesdk",
+    apkUrl: "https://drive.google.com/file/d/1t0xao65JYnZm63ZLZ5oXx6ghLM9YaRN_/view?usp=drive_link",
     webAppUrl: "https://hyecode.vercel.app",
     screenshots: [
       "/assets/screenshots/hyecode/1.jpg",
