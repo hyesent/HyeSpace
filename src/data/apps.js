@@ -11,14 +11,14 @@ export const apps = [
       "Hyescriptures is your all-in-one Bible app designed to help you read, study, and grow in God's Word every day.",
     shortDescription:
       "Your daily bread — Bible reading, devotionals, AI study tools & community.",
-    version: "1.0.2",
+    version: "1.0.1",
     size: "120 MB",
     rating: 4.7,
     totalRatings: 3,
-    lastUpdated: "2026-08-03",
-    isNew: false,
-    isUpdated: true,
-    apkUrl: "https://drive.google.com/file/d/1qrMFy3V_79YXMHOyJCWOw4XdjQRE4C0C/view?usp=drive_link",
+    lastUpdated: "2026-10-01",
+    isNew: true,
+    isUpdated: false,
+    apkUrl: "https://drive.google.com/file/d/1ROqZlEISGquKZ3NXjypCAXbbxRYB2ZbM/view?usp=drivesdk",
     webAppUrl: "https://hye-scriptures.vercel.app",
     screenshots: [
       "/assets/screenshots/hyescriptures/1.jpg",
@@ -32,17 +32,32 @@ export const apps = [
         date: "2026-08-06",
         notes: "Added more consistent audio bible performance.",
       },
-       {
+      {
         version: "v1.0.2",
-        date: "2026-08-16",
-        notes: "Improved socials and better image handling",
+        date: "2026-08-27",
+        notes: "Enhanced apk handling on low end Android devices",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-09-12",
+        notes: "New Feature: Added Scripture for the moment",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-09-15",
+        notes: "Improved Sermon generation and Game bugs Fixes",
+      },
+      {
+        version: "v1.0.5",
+        date: "2026-10-01",
+        notes: "Fixed Minor and Critical UX bugs",
       },
     ],
     subscriptionTiers: [
       {
         id: "hyescriptures-elder",
         name: "Elder",
-        price:  750000,
+        price: 7500,
         currency: "NGN",
         interval: "yearly",
         description:
@@ -55,7 +70,6 @@ export const apps = [
           "Priority support",
         ],
         highlighted: true,
-        paystackPlanCode: "PLN_9w4qnqs44shhxvv",
       },
     ],
   },
@@ -74,7 +88,7 @@ export const apps = [
     size: "5 MB",
     rating: 4.8,
     totalRatings: 10,
-    lastUpdated: "2026-08-04",
+    lastUpdated: "2026-10-14",
     isNew: false,
     isUpdated: true,
     apkUrl: "https://drive.google.com/file/d/1PbzYl4oXug66keU_HhoBitH9DyeafFP6/view?usp=drivesdk",
@@ -91,6 +105,46 @@ export const apps = [
         date: "2026-08-04",
         notes:
           "Improved reasoning and response, added map supporting pollen grain tracking, multiple weather view on tap for supported locations around the globe, and traffic + routing.",
+      },
+      {
+        version: "v1.0.2",
+        date: "2026-08-12",
+        notes: "Fixed Geo-coding location Bug",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-08-17",
+        notes: "Impoved Advisory Intellignce tab UI and added dynamic translation support",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-08-21",
+        notes: "Better response and improved travel illustration answers.",
+      },
+      {
+        version: "v1.0.5",
+        date: "2026-09-09",
+        notes: "More detailed data information on maptabs , Proper error warning message and full app multi lingual support and proper storing system",
+      },
+      {
+        version: "v1.0.6",
+        date: "2026-09-11",
+        notes: "introduced personalization in advisory Intelligence",
+      },
+      {
+        version: "v1.0.7",
+        date: "2026-09-14",
+        notes: "integrated and expanded sharing system: Added weather share cards,Added quote and facts image sharing.",
+      },
+      {
+        version: "v1.0.8",
+        date: "2026-10-12",
+        notes: "Major Upgrade: Full App UI Redesign, Added Environment and climate features, scoring cards,Data Cards and Graphs.",
+      },
+      {
+        version: "v1.0.9",
+        date: "2026-10-14",
+        notes: "Major data presentation upgrade,Added asronomy features on weather tab",
       },
     ],
     subscriptionTiers: [],
@@ -110,10 +164,10 @@ export const apps = [
     size: "10 MB",
     rating: 4.8,
     totalRatings: 2,
-    lastUpdated: "2026-08-03",
+    lastUpdated: "2026-10-06",
     isNew: true,
     isUpdated: false,
-    apkUrl: "https://drive.google.com/file/d/1oOCa5-iy7TWQXXtso3kOeRePVUSU77h6/view?usp=drivesdk",
+    apkUrl: "https://drive.google.com/file/d/1aw0Zk2Y5RyRwv1YrfHGK5Tll8TGBjPG7/view?usp=drivesdk",
     webAppUrl: "https://hyelearner-foundation.vercel.app",
     screenshots: [
       "/assets/screenshots/hyelearner/1.jpg",
@@ -127,12 +181,27 @@ export const apps = [
         date: "2026-07-26",
         notes: "Added comprehension and diagram support in practice.",
       },
+      {
+        version: "v1.0.2",
+        date: "2026-08-05",
+        notes: "Fixed studyPlan countdown bugs",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-09-23",
+        notes: "Major app Redesign",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-10-06",
+        notes: "Major upgrade: Existing features enhancements",
+      },
     ],
     subscriptionTiers: [
       {
         id: "hyelearner-foundation",
         name: "Foundation",
-        price: 150000,
+        price: 1500,
         currency: "NGN",
         interval: "monthly",
         description:
@@ -145,7 +214,6 @@ export const apps = [
           "Weakness detection & drills",
         ],
         highlighted: true,
-        paystackPlanCode: "PLN_xk4b9fvss0z9mbf",
       },
     ],
   },
@@ -164,7 +232,7 @@ export const apps = [
     size: "3 MB",
     rating: 4.7,
     totalRatings: 3,
-    lastUpdated: "2026-08-03",
+    lastUpdated: "2026-09-17",
     isNew: false,
     isUpdated: true,
     apkUrl: "https://drive.google.com/file/d/1vkaLnXCskjtlwt-LHfgwQd_asZAZpmmc/view?usp=drivesdk",
@@ -178,8 +246,28 @@ export const apps = [
     changelog: [
       {
         version: "v1.0.1",
-        date: "2026-08-06",
+        date: "2026-07-28",
         notes: "UI and UX redesign, bug fixes.",
+      },
+      {
+        version: "v1.0.2",
+        date: "2026-08-02",
+        notes: "Enhanced note sorting and writing tools",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-08-11",
+        notes: "improved user task management experience",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-08-16",
+        notes: "Bug fixes.",
+      },
+      {
+        version: "v1.0.1",
+        date: "2026-09-17",
+        notes: "Improved Graphs Illustration Diagram to adapt and display properly on mobile.",
       },
     ],
     subscriptionTiers: [],
@@ -198,7 +286,7 @@ export const apps = [
     size: "6 MB",
     rating: 4.5,
     totalRatings: 15,
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-10-17",
     isNew: false,
     isUpdated: true,
     apkUrl: "",
@@ -213,8 +301,34 @@ export const apps = [
       {
         version: "v1.0.1",
         date: "2026-07-16",
-        notes: "Implemented more realistic voice features Batch I.",
+        notes: "Refined voices for closer Human likeness I.",
       },
+      {
+        version: "v1.0.2",
+        date: "2026-08-13",
+        notes: "Refined voices for closer Human likeness II.",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-08-17",
+        notes: "Refined voices for closer Human likeness III and Introduction of characters.",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-08-29",
+        notes: "Added translations,presets,favourite voices,batch voice generation,saved audio library and major ui redesign.",
+      },
+      {
+        version: "v1.0.5",
+        date: "2026-09-05",
+        notes: "Integrated studio mode for story/script genertion",
+      },
+      {
+        version: "v1.0.6",
+        date: "2026-10-17",
+        notes: "Added lab mode for custom voice adjustments.",
+      },
+
     ],
     subscriptionTiers: [],
   },
@@ -235,7 +349,7 @@ export const apps = [
     lastUpdated: "2026-08-03",
     isNew: false,
     isUpdated: true,
-    apkUrl: "https://github.com/hyesent/hyecode-/releases",
+    apkUrl: "https://drive.google.com/file/d/1YHUHqj0PBTBEBoM8_n3j3eYnyWvo7WW_/view?usp=drivesdk",
     webAppUrl: "https://hyecode.vercel.app",
     screenshots: [
       "/assets/screenshots/hyecode/1.jpg",
@@ -249,6 +363,37 @@ export const apps = [
         date: "2026-08-06",
         notes: "Collapsible file tree.",
       },
+      {
+        version: "v1.0.2",
+        date: "2026-09-16",
+        notes: "Full App UI Redesign",
+      },
+      {
+        version: "v1.0.3",
+        date: "2026-09-19",
+        notes: "Integrated more coding tools and increased help ,ask and Templates library",
+      },
+      {
+        version: "v1.0.4",
+        date: "2026-09-28",
+        notes: "Integrated ONLINE AI Providers.",
+      },
+      {
+        version: "v1.0.5",
+        date: "2026-09-30",
+        notes: "Integrated Local ai and hosting guides",
+      },
+      {
+        version: "v1.0.5",
+        date: "2026-10-06",
+        notes: "Fixed android bugs hindering 32bit devices from intalling apk",
+      },
+      {
+        version: "v1.0.6",
+        date: "2026-10-13",
+        notes: "Fixed UI Bugs",
+      },
+
     ],
     subscriptionTiers: [],
   },
