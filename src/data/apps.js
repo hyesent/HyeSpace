@@ -467,6 +467,34 @@ export const apps = [
     ],
     subscriptionTiers: [],
   },
+
+    id: "DevsLibrary",
+    name: "DevsLibrary",
+    icon: "/assets/icons/hyezen.svg",
+    category: "Learning",
+    tags: ["Education","Development", "Coding"],
+    description:
+      "Online library for learning major courses involving computer related courses,it also includes a lab for various practicing and experimenting while learning,The content don't only teach the language but build knowledge and builders mental model for buidling systems with the specified course or book studied.",
+    shortDescription: "Online Library for programming related courses.",
+    version: "1.0.",
+    size: "30 MB",
+    rating: 4.6,
+    totalRatings: 6,
+    lastUpdated: "2026-11-23",
+    isNew: true,
+    isUpdated: false,
+    apkUrl: "",
+    webAppUrl: "https://hyezen.vercel.app",
+    screenshots: [
+      "/assets/screenshots/hyezen/1.jpg",
+      "/assets/screenshots/hyezen/2.jpg",
+      "/assets/screenshots/hyezen/3.jpg",
+      "/assets/screenshots/hyezen/4.jpg",
+    ],
+    changelog: [],
+    subscriptionTiers: [],
+  },
+      
 ];
 
 // ==================== COMING SOON ====================
